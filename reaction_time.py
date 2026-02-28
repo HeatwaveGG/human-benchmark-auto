@@ -15,5 +15,3 @@ while count <= 5:
         pyautogui.click()
         pyautogui.click()
         count += 1
-
-print ("End")
