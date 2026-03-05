@@ -57,5 +57,4 @@ while True:
                 pyautogui.click(*square8)
             case "square9":
                 pyautogui.click(*square9)
-        time.sleep(0.2)
     level += 1
