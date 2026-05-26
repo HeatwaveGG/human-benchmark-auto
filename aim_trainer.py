@@ -28,6 +28,7 @@ circle_colour = (149, 195, 232)
 background = (43, 135, 209)
 
 for i in range(30):
+    
     found = False
     screenshot = pyautogui.screenshot()
     for row in range((bottom - top) // step + 1):
@@ -37,8 +38,8 @@ for i in range(30):
             current_x = left + col * step + step // 2
             current_y = top + row * step + step // 2
             color = screenshot.getpixel((current_x, current_y))
-            if colour_distance(color, background) > 30:
+            if colour_distance(color, background) > 70:
+                print(f"Target {i+1}: clicking ({current_x}, {current_y}), color={color}")
                 pyautogui.click(current_x, current_y)
                 found = True
                 break
-                
